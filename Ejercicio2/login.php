@@ -1,7 +1,12 @@
 <?php
     session_start();
 ?>
-<form action=siguiente.php method=post>
-    <p>Campos del formulario:</p>
-    <input type=hidden name=sesion value="<?php echo $_GET['id_sesion'];?>" >
+<form  action="procesarLogin.php" method="post">
+        <label for="username">Usarname:</label>
+        <input type="text" id="nombre" name="nombre" required>
+        <p></p>
+
+        <label for="password">Password:</label>
+        <input type="text" id="nombre" name="nombre" required>
+        <input type="submit" value="Enviar">
 </form>
