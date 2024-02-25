@@ -3,13 +3,15 @@
 
 	<div class="saludo">
 		<?php
-		$_SESSION["nombre"] = "Carlos";
-			if (isset($_SESSION)){
-				echo('Bienvenido ' . $_SESSION["nombre"] . '. Buenos dias');
-
+			if (isset($_SESSION['nombre'])){
+				echo 'Bienvenido ' . $_SESSION["nombre"] . '. Buenos dias';
+				echo '<a href="logout.php">(Salir)</a>';
+			}
+			else{
+				echo '<p>Usuario desconocido. <a href="login.php">Login</a></p> ';
 			}
 		?>
-	Usuario desconocido. <a href='login.php'>Login</a>
+	
 	</div>
 
 </header>

@@ -1,5 +1,5 @@
 <?php
-session_start();
+	session_start();
 ?>
 
 <!DOCTYPE html>
@@ -30,6 +30,7 @@ session_start();
 
 		require('sidebarDer.php');
 		require('pie.php');
+		
 	?>
 
 	

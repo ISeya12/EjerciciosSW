@@ -1,3 +1,3 @@
 <aside id="sidebarDer">
-		Texto del sidebar derecho.
-	</aside>
+	Texto del sidebar derecho.
+</aside>
