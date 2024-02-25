@@ -6,7 +6,7 @@
 <head>
 <link rel="stylesheet" type="text/css" href="estilo.css" />
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<title>Portada</title>
+<title>Admin</title>
 </head>
 
 <body>
@@ -17,10 +17,15 @@
 			require('sidebarIzq.php');
 		?>
 		<main>
-			<article>
-				<h1>Página principal</h1>
-				<p>Aquí está el contenido público, visible para todos los usuarios.</p>
-			</article>
+        <?php
+            if (isset($_SESSION['esAdmin'])) { //Admin
+                echo "<h1>Consola de administración</h1>";
+                echo "<p>Aquí va la consola.</p>";
+            }
+            else { //NO Admin
+                echo "<h1>No eres admin. ¡Fuera de aqui!</h1>";
+            }
+        ?>
 		</main>
 
 		<?php
